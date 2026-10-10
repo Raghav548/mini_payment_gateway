@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: gateway-simulator
+
+gateway:
+  webhook-url: http://localhost:8080/webhook

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: payment-gateway
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mini_payment_gateway
+    username: postgres
+    password: 548
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  flyway:
+    enabled: true
+
+gateway:
+  simulator-url: http://localhost:8081/gateway/payments
+server:
+  port: 8080
